@@ -1,0 +1,14 @@
+menggunakan file items.py
+perhatikan selector target apa yang akan di akses contoh saat ingin menyeksi data author
+pada file items.py
+authors = scrapy.Field()
+import class settingan tadi akar bisa di akses di spidernya
+from sample_items_spider.items import SampleItemsSpiderItem
+pada method parse buat variabel dan panggil class yang ada di items.py
+        item = SampleItemsSpiderItem()
+panggil variabel tersebut dan panggil juga variabel di class items.py
+        item['authors'] = authors
+kembalikan nilainya agar terpanggil di terminal
+        return item
+~ kelebihan menggunakan items.py data seleksi mudah di lihat dibanding cara kita memanggil langsung di method parse
+menggunakan yield
