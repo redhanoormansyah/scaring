@@ -1,0 +1,7 @@
+argumen scrapy
+hanya dengan mengganti     # start_urls = ['http://books.toscrape.com']
+dengan fungsi
+def __init__(self, category):
+    self.start_urls = [category]
+
+ lalu jalankan di terminal scrapy crawl nama_spider -a nama_parameter_di_fungsi_tadi = "alamat_Url_yg_akan_dieksekusi"
